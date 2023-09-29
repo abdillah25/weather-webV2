@@ -11,29 +11,29 @@ const Navbar = () => {
   return (
     <div className={`fixed top-0 z-10  flex justify-between text-black bg-transparent bg-white shadow-md  md:justify-around navbar`}>
       <div className="flex w-[30%] items-center">
-        <a className="text-xl capitalize btn btn-ghost hover:bg-accent-content hover:text-white font-Kanit" onClick={() => scroll.scrollToTop()}>
+        <a className="text-xl capitalize btn btn-ghost hover:bg-black hover:text-white font-Kanit" onClick={() => scroll.scrollToTop()}>
           Weather App
         </a>
       </div>
 
       {/* list items navbar desktop */}
       <ul className="w-[80%] justify-around hidden md:flex capitalize font-Oswald ">
-        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-accent-content hover:text-white">
+        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-black hover:text-white">
           <ScrollLink to="main-card-section" smooth={true} duration={500} offset={-60}>
             current info
           </ScrollLink>
         </li>
-        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-accent-content hover:text-white">
+        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-black hover:text-white">
           <ScrollLink to="chart-card-section" smooth={true} duration={500} offset={-60}>
             Average Daily Temp
           </ScrollLink>
         </li>
-        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-accent-content hover:text-white">
+        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-black hover:text-white">
           <ScrollLink to="hourly-carousel-section" smooth={true} duration={500} offset={-60}>
             Hourly Update
           </ScrollLink>
         </li>
-        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-accent-content hover:text-white">
+        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-black hover:text-white">
           <ScrollLink to="day-forecast-section" smooth={true} duration={500} offset={-60}>
             Day Forecast
           </ScrollLink>
@@ -42,22 +42,22 @@ const Navbar = () => {
 
       {/* list items navbar android */}
       <ul className={` ${isSidebarOpen ? "-translate-x-full" : "translate-x-0"} transition-all duration-500 w-[40%] justify-around  items-center flex flex-col rounded-br-md absolute top-0 mt-16 left-0 h-[300px]  capitalize bg-white shadow-md font-Oswald`}>
-        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-accent-content hover:text-white">
+        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-black hover:text-white">
           <ScrollLink to="main-card-section" smooth={true} duration={500} offset={-60}>
             current info
           </ScrollLink>
         </li>
-        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-accent-content hover:text-white">
+        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-black hover:text-white">
           <ScrollLink to="chart-card-section" smooth={true} duration={500} offset={-60}>
             Average Daily Temp
           </ScrollLink>
         </li>
-        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-accent-content hover:text-white">
+        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-black hover:text-white">
           <ScrollLink to="hourly-carousel-section" smooth={true} duration={500} offset={-60}>
             Hourly Update
           </ScrollLink>
         </li>
-        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-accent-content hover:text-white">
+        <li className="px-3 py-1 transition-all rounded-lg duration-400 hover:bg-black hover:text-white">
           <ScrollLink to="day-forecast-section" smooth={true} duration={500} offset={-60}>
             Day Forecast
           </ScrollLink>
